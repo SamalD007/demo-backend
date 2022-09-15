@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user/app
-source environment/bin/activate
+cd /home/ec2-user/demo-backend
+pm2 start pm2.json
 supervisord -c supervisord.conf
 
