@@ -1,0 +1,23 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches: [master]
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+        # Install Dependencies
+      - name: Install dependencies
+        run: npm install
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: us-east-2
+          role-to-assume: arn:aws:iam::372446688470:role/AWS_Code_Deploy_Role
+
+        # Build App and Run Application Test
+      - name: Build Application and Run unit Test
+        run: npm run test
