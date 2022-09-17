@@ -8,10 +8,10 @@ hooks:
     - location: scripts/application_stop
       runas: root
   DownloadBundle:
-    - location: scripts/before_install
+    - location: scripts/download_bundle
       runas: root
   BeforeInstall:
-    - location: scripts/download_bundle
+    - location: scripts/before_install
       runas: root
   Install:
     - location: scripts/install
