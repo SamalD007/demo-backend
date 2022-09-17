@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /home/ec2-user/demo-backend
-echo install_app_dependancies
+echo start_server
+
