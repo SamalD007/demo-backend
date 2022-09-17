@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/ec2-user
-git clone https://github.com/SamalD007/demo-backend.git
+cd /home/ec2-user/demo-backend
+git pull
