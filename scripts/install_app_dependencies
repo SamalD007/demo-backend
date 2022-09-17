@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /home/ec2-user
 echo install_app_dependancies
+npm install
