@@ -1,4 +1,3 @@
 #!/bin/bash
 cd /home/ec2-user
-echo start_server
-
+echo install_app_dependancies
