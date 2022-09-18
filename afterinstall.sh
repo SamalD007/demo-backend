@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /home/demo-backend
+cd /home/ubuntu
 sudo pm2 kill -f
+npm install

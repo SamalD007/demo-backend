@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/demo-backend
+    destination: /home/ubuntu
 hooks:
   AfterInstall:
     - location: afterinstall.sh
