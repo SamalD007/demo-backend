@@ -5,7 +5,7 @@ const port =  5000
 app.use(morgan('dev'))
 
 app.get('/user', (req, res) => {
-    let result = {id:5,name:'user5'}
+    let result = {id:6,name:'user6'}
     console.log(`route- USER_DETAILS, DB - ${process.env.DB_NAME}`)
     res.status(200).json(result)
 })
